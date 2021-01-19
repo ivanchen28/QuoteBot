@@ -1,30 +1,11 @@
-# hello-express
+# QuoteBot
 
-A server that serves a webpage, its resources, and some data
+A Twitch.tv chat bot that remembers streamers' quotes and displays one at random when !quote is typed.
+The bot is currently configured for use by twitch.tv/aliensrock and runs 24/7 in his chat.
 
+Enter bot account details in the .env file, where USERNAME is the name of the account, and PASSWORD is the Oauth password for the account.
+Then, adjust settings accordingly in server.js.
 
-## Your Project
-
-On the front-end,
-
-- Edit `views/index.html` to change the content of the webpage
-- `public/client.js` is the javacript that runs when you load the webpage
-- `public/style.css` is the styles for `views/index.html`
-- Drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy.
-
-
-## Made by [Glitch](https://glitch.com/)
-
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
-( ᵔ ᴥ ᵔ )
+All uses can type !quote to generate a quote at random, !quote help for a help page, and !quote count to count the number of quotes.
+Users can type !quote [#] to display a specific quote.
+Channel moderators can add quotes with !quote add [quote] and delete quotes with !quote remove [quote#].
